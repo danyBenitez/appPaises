@@ -1,3 +1,29 @@
+# Configuración 
+
+Tener instalado Node JS se descarga de la siguiente paguina:
+https://nodejs.org/es/download/
+
+Instalar Angular CLI puedes instalarlo con este comando desde PowerShell de Windows: 
+npm install -g @angular/cli
+
+Pagina de Angular CLI:
+https://cli.angular.io/
+
+Instalar typescript, puedes instalarlo con este comando desde PowerShell de Windows: 
+npm i typescript
+
+Para descargar las dependencias de node se ejecuta el siguiente comando en la terminal donde se encuentra el proyecto:
+npm install
+
+Para correr la aplicación ejecutamos el siguiente comando:
+
+ng serve 
+
+Abrimos la siguiente dirección en nuestro navegador:
+
+http://localhost:4200/
+
+
 # AppPaises
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
