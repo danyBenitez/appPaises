@@ -1,0 +1,45 @@
+<div class="container">
+
+<div class="mt-5 mat-elevation-z8">
+
+  <table mat-table [dataSource]="dataSourcePaises" >
+
+     <!-- Position Column -->
+     <ng-container matColumnDef="numericCode">
+       <th mat-header-cell *matHeaderCellDef> Codigo </th>
+       <td mat-cell *matCellDef="let element"> {{element.numericCode}} </td>
+     </ng-container>
+   
+     <!-- Name Column -->
+     <ng-container matColumnDef="nombre">
+       <th mat-header-cell *matHeaderCellDef> Nombre </th>
+       <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+     </ng-container>
+   
+     <!-- Weight Column -->
+     <ng-container matColumnDef="capital">
+       <th mat-header-cell *matHeaderCellDef> Capital </th>
+       <td mat-cell *matCellDef="let element"> {{element.capital}} </td>
+     </ng-container>
+   
+     <!-- Symbol Column -->
+     <ng-container matColumnDef="subregion">
+       <th mat-header-cell *matHeaderCellDef> Sub-Región </th>
+       <td mat-cell *matCellDef="let element"> {{element.subregion}} </td>
+     </ng-container>
+
+       <!-- Symbol Column -->
+       <ng-container matColumnDef="flag">
+        <th mat-header-cell *matHeaderCellDef> Bandera </th>
+        <td mat-cell *matCellDef="let element"> <img [src]="element.flag" alt="" width="32" height="32" title="Bootstrap"> </td>
+      </ng-container>
+   
+     <tr mat-header-row *matHeaderRowDef="displayedColumnsPais"></tr>
+     <tr mat-row *matRowDef="let row; columns: displayedColumnsPais;"></tr>
+   </table>
+
+   <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</div>
+
+</div>
+ 
